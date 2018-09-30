@@ -1,10 +1,13 @@
-/**
- *Programmer Name: Hunter Danielson
- *Date Created:9/29/2018
- *Description of file:
- *This file creates the enum ItemType and provides utility to the associated abbreviations.
-*/
+//Package Statements
+
 package product;
+
+/**
+ * Programmer Name: Hunter Danielson
+ * Date Created:9/29/2018
+ * Description of file: This file creates the enum ItemType,
+ * and provides utility to the associated abbreviations.
+ */
 
 //resource: Classmate: Gregorio Lozado "Provided assistance on how to declare the strings"
 public enum ItemType {

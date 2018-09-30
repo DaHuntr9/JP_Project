@@ -1,14 +1,14 @@
-//package statements
+//Package Statements
 
 package product;
 
 /**
- *Programmer Name: Hunter Danielson
- *Date Created:9/29/2018
- *Description of file:
- *This file implements all other files such as product.java, Item.java, ItemType.java
- *Also creates objects of class product to be called and displayed to the user.
-*/
+ * Programmer Name: Hunter Danielson
+ * Date Created:9/29/2018
+ * Description of file: This file implements all other files such as product.java,
+ * Item.java, ItemType.java.Also creates objects of class product to be called
+ * and displayed to the user.
+ */
 
 //resource: Professor Vanselow "code provided"
 public class Main {
@@ -16,7 +16,7 @@ public class Main {
   /**
    * Main to call all instances of widget and product.
    */
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     Widget w1 = new Widget("Widget 1");
     System.out.println(w1.toString());
     Widget w2 = new Widget("Widget 2");
