@@ -7,21 +7,19 @@ package product;
 import java.util.Date;
 
 /**
- * Programmer Name: Hunter Danielson
- * Date Created:9/29/2018
- * Description of file: This file creates
+ * Programmer Name: Hunter Danielson Date Created:9/29/2018 Description of file: This file creates
  * class product, and implements associated functions into class product.
  */
 
 //abstract class called product that will implement the Item's interface.
-public abstract class Product implements Item {
+public abstract class Product implements Item, Comparable<Product> {
 
   //variables/constants
   int serialNumber;
   String manufacturer;
   Date manufacturedOn;
   String name;
-  private static Integer currentProductionNumber = 0;
+  private static Integer currentProductionNumber = 1;
 
   //constructor
   Product(String name) {
@@ -51,10 +49,10 @@ public abstract class Product implements Item {
   public String toString() {
     //formated output inside return statement
     return (
-        "Manufacturer: " + manufacturer + '\n'
-            + "Serial Number: " + serialNumber + '\n'
-            + "Date: " + manufacturedOn + "\n"
-            + "Name: " + name + "\n");
+        "Manufacturer : " + manufacturer + '\n'
+            + "Serial Number : " + serialNumber + '\n'
+            + "Date : " + manufacturedOn + "\n"
+            + "Name : " + name);
   }
 
   /**
@@ -93,5 +91,9 @@ public abstract class Product implements Item {
   //returns the serialNumber for the product
   public int getSerialNumber() {
     return (serialNumber);
+  }
+
+  public int compareTo(Product product) {
+    return this.name.compareTo(product.getName());
   }
 }
