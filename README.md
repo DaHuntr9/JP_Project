@@ -30,3 +30,19 @@ Functions are currently:<br>
   ItemType.java //enum<br>
   Item.java //interface<br>
   Product.java //java class  <br>
+
+V1.2 <br>
+Main.java<br>
+Product.java<br>
+<br>
+Created:<br>
+AudioPlayer.java<br>
+Screen.java<br>
+MoviePlayer.java<br>
+ScreenSpec.java<br>
+MultimediaControl.java<br>
+MonitorType.java<br>
+
+Comments:<br>
+Widget.Java is no longer in use as there is no need for a class,
+that prints data.<br>
