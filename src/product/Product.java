@@ -92,8 +92,8 @@ public abstract class Product implements Item, Comparable<Product> {
   public int getSerialNumber() {
     return (serialNumber);
   }
-
-  public int compareTo(Product product) {
-    return this.name.compareTo(product.getName());
+  //provided by classmate Carlos Perez
+  public int compareTo(Product o) {
+    return this.name.compareTo(o.getName());
   }
 }

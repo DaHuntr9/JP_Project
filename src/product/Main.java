@@ -11,11 +11,17 @@ package product;
  * Date Edited:10/27/2018
  * Description of file: used the main from the replit that was provided by Professor Venselow.
  * Added new functions into main.
+ * Edited
+ * Programmer Name: Hunter Danielson
+ * Date Edited:10/29/2018
+ * What was edited: Print statement was made generic so that anything
+ * can be printed from it.
  */
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import sun.net.www.content.text.Generic;
 
 public class Main {
   /**
@@ -32,6 +38,7 @@ public class Main {
     // Call the print method on the ArrayList
     print(listOfProducts);
   }
+
   /**Step 15
    *Complete the header for the testCollection method here
    *this is a class to test if i can instantiate objects for audio player and
@@ -58,10 +65,13 @@ public class Main {
   /**
    * Step 16
    * Create print method here.
+   * With assistance from my classmate Gregorio Lozado
+   * and Stack Overflow (https://stackoverflow.com/questions/20957487/generic-list-print-method).
+   * I was able to make this print statement Generic.
    */
 
-  public static void print(ArrayList<Product> list) {
-    for (Product product : list) {
+  public static <Generic> void print(ArrayList<Generic> list) {
+    for (Generic product : list) {
       System.out.println(product);
     }
   }
