@@ -41,6 +41,13 @@ public class Main {
     Collections.sort(listOfProducts);
     // Call the print method on the ArrayList
     print(listOfProducts);
+    //JPP 18/19 testing calls
+    System.out.println("Test Employee Info");
+    EmployeeInfo employee = new EmployeeInfo();
+    System.out.println(employee.getCode());
+    //JPP 20
+    Main myMain = new Main();
+    System.out.println(myMain.reverseString("Abcd12"));
   }
 
   /**Step 15
