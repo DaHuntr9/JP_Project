@@ -46,3 +46,7 @@ MonitorType.java<br>
 Comments:<br>
 Widget.Java is no longer in use as there is no need for a class,
 that prints data.<br>
+
+V1.2 <br>
+Main.java (edited added recusive function)
+EmployeeInfo.java addded
