@@ -36,7 +36,8 @@ public abstract class Product implements Item, Comparable<Product> {
      * And I also don't know a work around other then declaring it static,
      * and as a Integer which was specified in the oracle doc.
      */
-    currentProductionNumber = currentProductionNumber + 1;
+    //I don't understand how this is considered dodgy code.
+    currentProductionNumber++;
     //Set manufacturedOn as the current date and time.
     //resource: Classmate: Gregorio Lozadao
     Date currentdate = new Date();

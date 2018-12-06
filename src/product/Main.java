@@ -16,6 +16,10 @@ package product;
  * Date Edited:10/29/2018
  * What was edited: Print statement was made generic so that anything
  * can be printed from it.
+ * Edited
+ * Programmer Name: Hunter Danielson
+ * Date Edited:12/05/2018
+ * What was edited: Added recursive reverse string function.
  */
 
 import java.util.ArrayList;
@@ -70,9 +74,27 @@ public class Main {
    * I was able to make this print statement Generic.
    */
 
-  public static <Generic> void print(ArrayList<Generic> list) {
-    for (Generic product : list) {
+  public static <T> void print(ArrayList<T> list) {
+    for (T product : list) {
       System.out.println(product);
+    }
+  }
+  /**
+   * Step 20 recursive function to reverse the string.
+   */
+  public String reverseString(String id) {
+    /*
+    This is a much easier way to do this so I don't understand why we would need to build a
+    recursive function. But it is required by the documentation so i will do the recursion
+    either way.
+    StringBuilder a = new StringBuilder(id);
+    String b = a.reverse().toString();
+    return b;
+    */
+    if(id.isEmpty()){
+      return id;
+    } else {
+      return reverseString(id.substring(1))+id.charAt(0);
     }
   }
 }
