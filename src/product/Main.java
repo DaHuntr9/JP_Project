@@ -79,6 +79,7 @@ public class Main {
       System.out.println(product);
     }
   }
+
   /**
    * Step 20 recursive function to reverse the string.
    */
@@ -91,10 +92,10 @@ public class Main {
     String b = a.reverse().toString();
     return b;
     */
-    if(id.isEmpty()){
+    if (id.isEmpty()) {
       return id;
     } else {
-      return reverseString(id.substring(1))+id.charAt(0);
+      return reverseString(id.substring(1)) + id.charAt(0);
     }
   }
 }
