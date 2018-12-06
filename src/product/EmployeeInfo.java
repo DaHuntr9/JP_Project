@@ -18,6 +18,7 @@ public class EmployeeInfo {
 
   //requirement 19 fields
   String deptId;
+  //Given value so I did not change it.
   Pattern p;
   Scanner in;
 
